@@ -55,8 +55,14 @@ p {
   border-radius: 3px !important;
   margin-top: 15px !important;
   height: auto !important;
-  width: 75% !important;
+  width: 100% !important;
 }
+
+.button-wrapper {
+  width: 75%;
+  margin: auto;
+}
+
 #mce-EMAIL {
   background-color: #FFF !important;
   font-size: 1em !important;
@@ -85,9 +91,12 @@ p {
 @media only screen 
     and (max-width : 736px)
 {
-  #mce-EMAIL, .button {
+
+
+  #mce-EMAIL, .button-wrapper {
     width: 100% !important;
   }
+
 
 }
 
@@ -125,7 +134,7 @@ p {
   <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     
-    <div class="clear">
+    <div class="clear button-wrapper">
     <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
 </form>
